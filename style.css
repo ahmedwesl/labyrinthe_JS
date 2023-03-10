@@ -1,0 +1,13 @@
+.cell {
+    width: 50px; /* Changer le nombre 10 pour ajuster le nombre de cases par ligne */
+    height: 50px; /* Changer le nombre 10 pour ajuster le nombre de cases par colonne */
+    border: 1px solid #5D5D5D;
+    background-color: #E9E9E9;
+    display: inline-block;
+    margin-right: -4px;
+}
+
+.new-line {
+    display: grid;
+
+   }
