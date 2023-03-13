@@ -1,13 +1,28 @@
-.cell {
-    width: 50px; /* Changer le nombre 10 pour ajuster le nombre de cases par ligne */
-    height: 50px; /* Changer le nombre 10 pour ajuster le nombre de cases par colonne */
-    border: 1px solid #5D5D5D;
-    background-color: #E9E9E9;
-    display: inline-block;
-    margin-right: -4px;
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.new-line {
-    display: grid;
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
 
-   }
+.cell {
+    width: calc(33.33% - 5px);
+    height: 80px;
+    margin: 0px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.third-cell {
+    margin-right: 0;
+}
